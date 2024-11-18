@@ -21,13 +21,13 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:text="Usha Nandhini"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/user_icon"
         android:fontFamily="@font/merienda_one"
-        android:text="Yash Sonawane"
         android:textColor="@color/black"
-        android:textSize="20sp" />
-
+        android:textSize="20sp"/>
 
 </RelativeLayout>

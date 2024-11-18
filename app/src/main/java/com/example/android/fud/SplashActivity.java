@@ -2,6 +2,7 @@ package com.example.android.fud;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -44,6 +45,7 @@ public class SplashActivity extends AppCompatActivity {
         // TO hide the status bar (which contains charging ana all)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         logo = findViewById(R.id.app_logo);
         appName = findViewById(R.id.app_name);
@@ -83,6 +85,11 @@ public class SplashActivity extends AppCompatActivity {
                 .alpha(0f)
                 .setDuration(2000)
                 .setStartDelay(4000);
+        burgerAnim.setAlpha(1f);
+        burgerAnim.animate()
+                .alpha(0f)
+                .setDuration(2000)
+                .setStartDelay(4000);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -101,7 +108,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
                 else{
                     // Directly go to Login Activity
-                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
                 }

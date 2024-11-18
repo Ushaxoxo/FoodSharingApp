@@ -10,10 +10,11 @@
         <item android:title="Locate NGO's"
             android:icon="@drawable/favorite"
             android:id="@+id/locateNGO"/>
+
         <item android:title="Coupons"
             android:icon="@drawable/promo_code"
             android:id="@+id/coupons"/>
-        <item android:title="Your Donations"
+        <item android:title="Donations around You"
             android:icon="@drawable/orders"
             android:id="@+id/donations"/>
     </group>
@@ -26,6 +27,16 @@
                 <item android:title="User Settings"
                     android:icon="@drawable/settings"
                     android:id="@+id/settings"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Log Out"
+                    android:icon="@drawable/logout_button"
+                    android:id="@+id/logout"/>
             </group>
         </menu>
     </item>

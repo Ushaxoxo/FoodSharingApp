@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Ignore sensitive Gradle property files
+github.properties
+gradle.properties

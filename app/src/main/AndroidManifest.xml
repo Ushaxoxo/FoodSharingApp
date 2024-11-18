@@ -7,26 +7,29 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/app_logo"
+        android:icon="@drawable/app_logo_final"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.FUD">
-        <activity android:name=".ChatBot"></activity>
+        <activity android:name=".SuccessfulSubmission" />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".BotActivity" />
         <activity android:name=".NeedFoodActivity" />
         <activity android:name=".NgoAgentActivity" />
         <activity android:name=".DonateActivity" />
-        <activity android:name=".SplashActivity" >
-
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="preloaded_fonts"

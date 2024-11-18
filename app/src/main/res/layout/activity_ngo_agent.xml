@@ -12,15 +12,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="12dp">
+
+        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Onle Last Step"
+            android:text="One Last Step"
             android:layout_gravity="center"
             android:textSize="20sp"
             android:textColor="@color/orange"
-            android:paddingBottom="20dp"/>
+            android:paddingBottom="20dp" />
 
+        <!-- Location Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,30 +37,33 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/outline_my_location_24"/>
+                android:src="@drawable/outline_my_location_24" />
         </LinearLayout>
 
         <EditText
+            android:id="@+id/locationField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="textCapWords"
             android:hint="Location" />
 
+        <!-- Food Items Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="Food item(s)" />
 
-
         <EditText
+            android:id="@+id/dishField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="textCapWords"
             android:hint="Dish" />
 
+        <!-- Preferred Time Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,16 +77,18 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/outline_watch_later_24"/>
+                android:src="@drawable/outline_watch_later_24" />
         </LinearLayout>
 
         <EditText
+            android:id="@+id/timeField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="textCapSentences"
-            android:hint="Time"/>
+            android:hint="Time" />
 
+        <!-- Pickup Date Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,55 +102,55 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/outline_date_range_24"/>
+                android:src="@drawable/outline_date_range_24" />
         </LinearLayout>
 
-
         <EditText
+            android:id="@+id/dateField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="date"
             android:hint="dd/mm/yy" />
 
+        <!-- Quantity Section -->
         <TextView
             android:id="@+id/quantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Quantity: 20 people" />
+            android:text="Quantity: 1 people" />
 
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:min="20"
-            android:max="500"/>
+            android:min="1"
+            android:max="500" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="12dp"
-                android:text="Min: 20"/>
+                android:text="Min: 1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
-                android:text="Max: 500"/>
-
+                android:text="Max: 500" />
         </LinearLayout>
 
+        <!-- Photos Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Photos"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp" />
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -161,30 +169,34 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/add_photo"/>
+                        android:src="@drawable/add_photo" />
                 </RelativeLayout>
             </LinearLayout>
         </HorizontalScrollView>
 
+        <!-- Assurance Checkbox -->
         <CheckBox
+            android:id="@+id/assuranceCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="I assure that food quality and hygiene has been maintained"/>
+            android:text="I assure that food quality and hygiene has been maintained" />
 
-
+        <!-- Submit Button -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
+                android:id="@+id/submit_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:background="@drawable/shape"
                 app:backgroundTint="@color/orange"
                 android:layout_centerHorizontal="true"
                 android:paddingHorizontal="48dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="4dp"
-                android:text="Submit"/>
+                android:text="Submit" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FFFAFA">
 
-    <!--    <TextView-->
-<!--        android:id="@+id/textView5"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:gravity="center"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:fontFamily="@font/bangers"-->
-<!--        android:text="FUDonation"-->
-<!--        android:textColor="@color/orange"-->
-<!--        android:textSize="35sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"-->
-<!--        app:layout_constraintVertical_bias="0" />-->
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView"
@@ -49,7 +35,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu_bold"
+            android:fontFamily="@font/nunito_regular"
             android:text="Want To Share Food?"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -77,7 +63,7 @@
             android:id="@+id/donate_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:elevation="100dp"
+            android:elevation="10dp"
             android:src="@drawable/donate_icon_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +76,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu"
+            android:fontFamily="@font/nunito_regular"
             android:text="DONATE"
             android:textColor="@color/black"
             android:textSize="22sp"
@@ -121,7 +107,7 @@
             android:id="@+id/ngo_agent_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:elevation="100dp"
+            android:elevation="10dp"
             android:src="@drawable/delivery_vehicle_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +120,7 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu"
+            android:fontFamily="@font/nunito_regular"
             android:text="NGO Agent"
             android:textColor="@color/black"
             android:textSize="22sp"
@@ -151,7 +137,7 @@
             android:fontFamily="@font/nunito_regular"
             android:gravity="center"
             android:maxLines="2"
-            android:text="Food pickup and\n deliver"
+            android:text="Door Step Food\n PickUp Service"
             android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -164,8 +150,8 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
         android:id="@+id/need_food"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/all_curvy"
         android:elevation="30dp"
@@ -179,42 +165,44 @@
             android:id="@+id/more_food_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu"
+            android:fontFamily="@font/nunito_regular"
             android:text="I need some Food"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintVertical_bias=".3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".3" />
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact Us if U see a Needy Person"
+            android:text="Contact Us if you see a Needy Person"
             android:textColor="@color/orange"
+            android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/more_food_button"/>
+            app:layout_constraintTop_toBottomOf="@+id/more_food_button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/fab_robot"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="16dp"-->
-<!--        android:backgroundTint="#FB377A"-->
-<!--        android:elevation="70dp"-->
-<!--        android:src="@drawable/next_page"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias=".95" />-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_robot"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:backgroundTint="#FB377A"-->
+    <!--        android:elevation="70dp"-->
+    <!--        android:src="@drawable/next_page"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias=".95" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
