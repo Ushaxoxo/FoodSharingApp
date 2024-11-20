@@ -108,7 +108,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
                 else{
                     // Directly go to Login Activity
-                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, OpeningActivity.class);
                     startActivity(intent);
                     finish();
                 }

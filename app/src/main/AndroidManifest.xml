@@ -20,6 +20,13 @@
         <activity android:name=".NeedFoodActivity" />
         <activity android:name=".NgoAgentActivity" />
         <activity android:name=".DonateActivity" />
+        <activity android:name=".OpeningActivity" />
+        <activity android:name=".NgoAuthActivity" />
+
+        <!-- NGO Dashboard -->
+        <activity android:name=".NgoDashboardActivity" />
+
+        <!-- NGO Registration (if separate) -->
         <activity android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
